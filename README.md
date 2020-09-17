@@ -8,7 +8,7 @@ Just provide your own API key.
 
 Features to be added soon: 
 
-1. Implement command line utility that takes up to 5 arguments (2-4 companies and a timeframe) and generate a correlation table based on their historical price data for the given timeframe.
+1. Implement command line utility that takes up to 5 arguments (2-4 tickers and a timeframe) and generate a correlation table based on their historical price data for the given timeframe.
 
 
 
