@@ -6,7 +6,6 @@ import bs4 as bs
 import os
 import pickle
 
-callback_url = 'http://localhost:3000'
 key = 'INSERT YOUR OWN KEY'
 
 # price_hist_endpoint = r'https://api.tdameritrade.com/v1/marketdata/{}/pricehistory'.format('FB')
@@ -30,7 +29,7 @@ def list_tickers():
     return tickers
 
 
-# This scrapes the wikipedia for the SP500 using beatiful soup,
+# This scrapes the wikipedia for the SP500 using beatiful soup.
 def save_sp500_tickers():
     resp = requests.get('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
     soup = bs.BeautifulSoup(resp.text, 'lxml')
@@ -111,15 +110,8 @@ if __name__ == '__main__':
     get_data_tda()
 
 
-# Time in seconds not milliseconds from epoch to datetime format
-# print(datetime.datetime.fromtimestamp(1593580828).strftime('%c'))
-
-# pp = pprint.PrettyPrinter()
-# pp.pprint(data)
-
-
-# Ideas
-# Make a command line tool that allows you to request any
+# Ideas: 
+# Make command line utility to compare up to 4 stocks and their historical correlations.  (pandas has a .corr() function, should be easy)/
 
 
 
