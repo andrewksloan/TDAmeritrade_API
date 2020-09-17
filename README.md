@@ -8,9 +8,9 @@ Just provide your own TDA API key.
 
 Features to be added soon: 
 
-1. Implement command line utility that takes up to 5 arguments (2-4 tickers and a timeframe) and generate a correlation table based on their historical price data for the given timeframe.
+1. Implement command line utility that takes up to 5 arguments (2-4 tickers and a timeframe) and generate a correlation table based on their historical price data for the given timeframe. (pandas.corr())
 
-2. Command line utility that takes x arguments.  Plots and overlays graphs of SP500 companies entered by user input for the past y days.   
+2. Command line utility that takes x arguments.  Plots and overlays graphs of SP500 companies entered by user input for the past y days. (matplotlib)
 
 
 
