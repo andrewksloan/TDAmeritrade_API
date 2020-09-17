@@ -30,6 +30,7 @@ def list_tickers():
 
 
 # This scrapes the wikipedia for the SP500 using beatiful soup.
+# This function was taken almost verbatim from sentdex YouTube channel.  Scrapes Wikipedia page to get all 500 tickers in list.
 def save_sp500_tickers():
     resp = requests.get('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
     soup = bs.BeautifulSoup(resp.text, 'lxml')
